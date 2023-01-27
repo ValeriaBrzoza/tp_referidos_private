@@ -7,7 +7,6 @@ class Referred {
     String linkedin
     String city
     Employee employee
-    Integer employeeId
     static hasMany = [postulations: Postulation]
 
     static constraints = {

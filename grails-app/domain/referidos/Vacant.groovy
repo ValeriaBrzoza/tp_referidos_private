@@ -3,7 +3,6 @@ package referidos
 class Vacant {
     Integer id
     Recruiter recruiter
-    Integer recruiterId
     String title
     String description
     String state
@@ -12,6 +11,6 @@ class Vacant {
     static hasMany = [postulations: Postulation]
 
     static constraints = {
-        id unique: true
+        id unique: true, generator: 'assigned'
     }
 }
